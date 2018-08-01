@@ -34,6 +34,7 @@ Apowerful type of neural network designed to handle sequence dependence is the r
 The electric load data is considered as time-series data because it is recorded every 30 minutes. In time-series data, the data collected at a time t naturally relates to the data at the previous adjacent time (i.e., at the time t – 1). A LSTM network deals with this characteristic by using hidden-state information obtained during the network training with the data at the time t – 1 to train the network with the data at the time t. Figure 2, for example, illustrates how the LSTM network works, where xt-1, xt, and xt+1 are the input at times t - 1, t, and t + 1, respectively, s0, s1, and s2 are hidden-state information of hidden layers, and ot-1, ot, and ot+1 are the output at times t - 1, t, and t + 1, respectively.
 
 ## References
+
 [1]. Hippert, H. S., Pedreira, C. E., & Souza, R. C. (2001). Neural networks for short-term load forecasting: A review and evaluation. IEEE Transactions on power systems, 16(1), 44-55.
 [2]. Narayan, A., & Hipel, K. W. (2017, October). Long short term memory networks for short-term electric load forecasting. In Systems, Man, and Cybernetics (SMC), 2017 IEEE International Conference on (pp. 2573-2578). IEEE.
 [3]. Zhang, B., Wu, J. L., & Chang, P. C. (2018). A multiple time series-based recurrent neural network for short-term load forecasting. Soft Computing, 22(12), 4099-4112.
