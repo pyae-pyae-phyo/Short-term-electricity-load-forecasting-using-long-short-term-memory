@@ -39,4 +39,4 @@ The electric load data is considered as time-series data because it is recorded 
 2. Narayan, A., & Hipel, K. W. (2017, October). Long short term memory networks for short-term electric load forecasting. In Systems, Man, and Cybernetics (SMC), 2017 IEEE International Conference on (pp. 2573-2578). IEEE.
 3. Zhang, B., Wu, J. L., & Chang, P. C. (2018). A multiple time series-based recurrent neural network for short-term load forecasting. Soft Computing, 22(12), 4099-4112.
 4. Liu, C., Jin, Z., Gu, J., & Qiu, C. (2017, September). Short-term load forecasting using a long short-term memory network. In Innovative Smart Grid Technologies Conference Europe (ISGT-Europe), 2017 IEEE PES (pp. 1-6). IEEE.
-5. Hamedmoghadam, H., Joorabloo, N., & Jalili, M. (2018). Australia's long-term electricity demand forecasting using deep neural networks. arXiv preprint arXiv:1801.02148.
+5. Hamedmoghadam, H., Joorabloo, N., & Jalili, M. (2018). Australia's long-term electricity demand forecasting using deep neural networks.
