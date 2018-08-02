@@ -12,14 +12,14 @@ The data for this project is provided by Electricity Generating Authority of Tha
 
 ### 2.1 Long-term goals (to show where this project is located in my graduate research)
 
-➢ To develop an efficient forecasting system for electricity generation companies and industries t for reducing the generating and operating cost.
-➢ To investigate the application of appropriate techniques and tools of forecasting on electricity for Thailand with minimum forecasting error.
-➢ To investigate the application of the generated results as a guideline for the better performance of different electric industries in other Asian countries.
+- To develop an efficient forecasting system for electricity generation companies and industries t for reducing the generating and operating cost.
+- To investigate the application of appropriate techniques and tools of forecasting on electricity for Thailand with minimum forecasting error.
+- To investigate the application of the generated results as a guideline for the better performance of different electric industries in other Asian countries.
 
 ### 2.2 Short-term goals (as the goals for this camp)
 
-➢ To develop an appropriate model of LSTM-RNN for electricity balance forecasts.
-➢ To evaluate my model with other related studies.
+- To develop an appropriate model of LSTM-RNN for electricity balance forecasts.
+- To evaluate my model with other related studies.
 
 ## 3. Proposed framework/methodology
 
