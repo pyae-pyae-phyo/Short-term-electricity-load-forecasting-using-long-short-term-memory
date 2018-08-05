@@ -9,11 +9,10 @@
 
 Technological advancement necessitates effective operation in generation, transmission and distribution of electricity in electric companies and industries. The amount of electricity generation and electricity consumption should be balanced because of no developed system to store generated electricity or to produce electrical energy at a sudden supply demand. Imbalanced demands of electricity generation cause economic losses and dissatisfaction of users. Thus, it is important for the electricity providers to maintain the balance among electricity generation, transmission, distribution and consumer services. Electricity load forecasting is one of the necessary techniques to improve the balance of electricity, but there are difficulties in coping with many complex factors such as weather, temperature, seasonal variation, etc., which are all non-linear. Recent studies tried to solve these issues by employing various machine learning methods, and deep learning techniques have been paid more attention. Henrique et. al [1] reviewed and evaluated neural networks for short-term load forecasting focusing on Artificial Neural Network (ANN). However, the presence of back propagation and complex multiple layers for simple compute gradients reduced the efficiency of the solution.
 
-![](https://github.com/smiile8888/machine-learning-101/blob/master/Pictures/GCP/2.png?raw=true)
-
 Many recent studies have been conducted on load forecasting using different deep learning techniques. Some reviewed papers are shown in Table 1. Long short-term memory (LSTM) based recurrent neural network (RNN) is one of popular methods for load forecasting. This model has been used on different input variables and datasets from various countries. Most of the studies mention that the selection of input variables is one of important things to consider for load forecasting to achieve better performance. Thus, this project specifically focuses on an efficient input structure using LSTM model.
 
 Table 1.  A review of Deep Leaning (DL) models used in load forecasting papers
+
 ![](https://github.com/pyae-pyae-phyo/Short-term-electricity-load-forecasting-using-long-short-term-memory/blob/master/picture/related_works.JPG?raw=true)
 
 The data for this project is provided by Electricity Generating Authority of Thailand (EGAT). In this project, the input variables of the proposed model are considered as load of previous week same day (Lt(d-7)), load of yesterday (two periods before) (Lt-2(d-1)), load of yesterday (one period before) (Lt-1(d-1)), load of yesterday at the same period (Lt(d-1)), temperature of yesterday at the same period (Tt(d-1)), monthly seasonal index (SI) which is monthly load divided by yearly load, and January to December as 12 inputs which have values 0 and 1 (e.g., if it is January -> only Jan is 1, others are 0) to forecast the load (Ft(d)). This project ensures the appropriate selection of parameters during the training process which affects the forecasting performance.
@@ -42,25 +41,30 @@ The historical load and temperature data (from 2009 to 2017) are provided by Ele
 The goal of this project is to develop a forecasting system of electricity balance between supply and demand using the LSTM based RNN technique and evaluate the method by comparing it to other techniques. The overview of the process in the system is shown in Figure 1. Firstly, the system is loaded with a dataset consisting eighteen input variables. The data is normalized by using the min-max scaling method. The data is then splitted into the training and testing sets. Next, a LSTM network is constructed and trained. After that, the trained LSTM network is used for prediction.
 
 ![](https://github.com/pyae-pyae-phyo/Short-term-electricity-load-forecasting-using-long-short-term-memory/blob/master/picture/lstm.JPG?raw=true)
+
 Figure 1. A process of electricity load forecasting
 
 Apowerful type of neural network designed to handle sequence dependence is the recurrent neural network. In this project, the LSTM network is a recurrent neural network that is trained using backpropagation through time to overcome the vanishing gradient problem. First of all, the eighteen input variables are imported into the LSTM network. In the LSTM network, the input units are fully connected to a hidden layer. The cell outputs are fully connected to the cell inputs, to all gates, and to the output units. During the model fitting, mean squared error is used as loss function for optimizing the parameters of the LSTM model and Adam is used as the optimization algorithm for the loss function.
 The electric load data is considered as time-series data because it is recorded every 30 minutes. In time-series data, the data collected at a time t naturally relates to the data at the previous adjacent time (i.e., at the time t – 1). A LSTM network deals with this characteristic by using hidden-state information obtained during the network training with the data at the time t – 1 to train the network with the data at the time t. Figure 2, for example, illustrates how the LSTM network works, where xt-1, xt, and xt+1 are the input at times t - 1, t, and t + 1, respectively, s0, s1, and s2 are hidden-state information of hidden layers, and ot-1, ot, and ot+1 are the output at times t - 1, t, and t + 1, respectively.
 
 ![](https://github.com/pyae-pyae-phyo/Short-term-electricity-load-forecasting-using-long-short-term-memory/blob/master/picture/lstm_1.JPG?raw=true)
+
 Figure 2. The working process of LSTM networks
 
 ## 4. Result and Discussion
 
 Table 2. Average monthly MAPE in 2017
+
 ![](https://github.com/pyae-pyae-phyo/Short-term-electricity-load-forecasting-using-long-short-term-memory/blob/master/picture/mape.JPG?raw=true)
 
 The aim of this project is to minimize mean absolute percentage error (MAPE) which is used as accuracy measurement. The average monthly MAPE in 2017 is shown in Table 2. According to the table, error in December are highest because of long holidays, tourism and public events. As the consequence of results in December, January is getting higher MAPE. Moreover, the highest temperature is affected on the accuracies in March, April and May for both LSTM and DBN models. Overall, the LSTM model outperforms the DBN model in every months. Therefore, LSTM model can predict nearly the minimum MAPE (0.8852) and the maximum MAPE (21.3393) which are shown in Figure 3 and Figure 4.
 
 ![](https://github.com/pyae-pyae-phyo/Short-term-electricity-load-forecasting-using-long-short-term-memory/blob/master/picture/min_mape.JPG?raw=true)
+
 Figure 3. Minimum MAPE in 2017
 
 ![](https://github.com/pyae-pyae-phyo/Short-term-electricity-load-forecasting-using-long-short-term-memory/blob/master/picture/max_mape.JPG?raw=true)
+
 Figure 4. Maximum MAPE in 2017
 
 ## References
