@@ -67,6 +67,16 @@ Figure 3. Minimum MAPE in 2017
 
 Figure 4. Maximum MAPE in 2017
 
+## Application & Computation Time
+
+Python 3.6.4
+Anaconda Navigator
+Computation time - 30min for each dataset
+
+## Future Work
+
+I will try on the new input structure more. The model will be trained on many datasets (up to 5years) and will be used consumption energy later on.
+
 ## References
 
 1. Hippert, H. S., Pedreira, C. E., & Souza, R. C. (2001). Neural networks for short-term load forecasting: A review and evaluation. IEEE Transactions on power systems, 16(1), 44-55.
