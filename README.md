@@ -69,9 +69,9 @@ Figure 4. Maximum MAPE in 2017
 
 ## Application & Computation Time
 
-Python 3.6.4
-Anaconda Navigator
-Computation time - 30min for each dataset
+- Python 3.6.4
+- Anaconda Navigator
+- Computation time - 30min for each dataset
 
 ## Future Work
 
