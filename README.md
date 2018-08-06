@@ -3,7 +3,7 @@
 ![](https://github.com/pyae-pyae-phyo/Short-term-electricity-load-forecasting-using-long-short-term-memory/blob/master/picture/self_intro_1.JPG?raw=true)
 
 
-# Project Title: Short-term-electricity-load-forecasting-using-long-short-term-memory
+# Project Title: Short-term Electricity Load Forecasting Using Long Short-term Memory
 
 ## 1. Problem Statement
 
