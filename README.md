@@ -75,7 +75,11 @@ Figure 4. Maximum MAPE in 2017
 
 ## Future Work
 
-I will try on the new input structure more. The model will be trained on many datasets (up to 5years) and will be used consumption energy later on.
+- Try on the new input structure more. 
+- Train the model using more datasets (up to 5 years)
+- Use consumption energy (MWh) instead of net peak (MW)
+- Implement the model to reduce error in December
+- Apply another deep learning technique
 
 ## References
 
